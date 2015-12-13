@@ -93,6 +93,9 @@ body {
 	 margin-top: 30px;
 	 font-size: 10px;
 	 color: #8b8080;
+     bottom: 0;
+     position: fixed;
+     left: 0;
 	 }
 
 #DH {
@@ -102,10 +105,6 @@ body {
  }
 
 /* How to get the footer to the bottom of the screen */
-.push {
-	height: 30px;
-}
-
 h3 {
 	position: relative;
 	top: 30%;
