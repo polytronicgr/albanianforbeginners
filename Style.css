@@ -94,8 +94,8 @@ body {
 	 font-size: 10px;
 	 color: #8b8080;
      bottom: 0;
-     position: fixed;
-     left: 0;
+     position:fixed;
+     overflow:hidden;
 	 }
 
 #DH {
