@@ -1,5 +1,5 @@
- /* These are my own CSS tweaks, on top of Bootstrap */		  
- 
+ /* These are my own CSS tweaks, on top of Bootstrap */
+
 .sidebar-nav {
   position: absolute;
   top: 0;
@@ -40,8 +40,8 @@ body {
 	background-color: #ffffff;
 	margin-bottom: -20px;
 }
- 
- 
+
+
 .navbar .nav > li > a {
     text-decoration: none;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
@@ -52,43 +52,43 @@ body {
     color:  black;
 	font: bold;
 }
- 
- 
+
+
  .text-schwarz {
 	 color: black;
  }
- 
+
  .navbar {
 	 background-color: rgba(204, 0, 0, 0.8);
-	 
+
  }
- 
+
  .image-height-fixed {
-	max-width: auto; 
+	max-width: auto;
 	height: 120%;
 	max-height: 100px;
 	display:block;
 	margin-top: -7px;
 }
- 
+
  .text-weiss {
 	color: white;
 }
 
 
- body {	
+ body {
 	padding-top: 70px;
- }	
- 	 
- .slide {		 
+ }
+
+ .slide {
  	text-align: center;
 	min-height: 510px;
  	.center-block();
  }
- 
- 
+
+
  /*my own ID's */
- 
+
 #footermargin {
 	 margin-top: 30px;
 	 font-size: 10px;
@@ -102,16 +102,6 @@ body {
  }
 
 /* How to get the footer to the bottom of the screen */
-html, body {
-        height: 100%;
-}
-#wrap {
-	min-height: 100%;
-	height: auto !important;
-	height: 100%;
-	margin: 0 auto -30px;
-}
-
 .push {
 	height: 30px;
 }
@@ -191,5 +181,5 @@ h3 {
 #btn-toolbar {
 	font-size: 23;
 	color: #ff2500;
-	
+
 }
