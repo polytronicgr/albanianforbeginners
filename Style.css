@@ -93,10 +93,11 @@ body {
 	 margin-top: 30px;
 	 font-size: 10px;
 	 color: #8b8080;
-     bottom: 0;
+     bottom:0;
      position:fixed;
+     width: 100%;
      overflow:hidden;
-	 }
+}
 
 #DH {
 	 font-family: Calibri, sans-serif;
