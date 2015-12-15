@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+		<link href="bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="Style.css">
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src='./scripts/footer.js'></script>
+
+		<title>Kontakt.html</title>
+
+	</head>
+	
+	<body>
+	
+	<div id="wrap">
+		<nav class="navbar navbar-fixed-top">
+			<main class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">
+						<img class="image-height-fixed" alt="Brand" src="Logo.png">
+					</a>
+					<a class="navbar-brand" id="text-schwarz" href="#">Albanisch für Anfänger</a>
+				</div>
+
+				<ul class="nav navbar-nav" id="text-schwarz">
+					<li><a href="#">Lernen</a></li>
+					<li><a href="#">A-Z</a></li>
+					<li><a href="#">Forum</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right" id="text-schwarz">
+					<li><a href="#">Hilfe</a></li>
+					<li><a href="#">Projekt</a></li>
+				</ul>
+			</main>
+		</nav>
+	</div>
+	
+	<div class="container">
+
+	      <div class="starter-template">
+	        <h3 style="text-align:center; background-color: #f2d7da">Kontaktformular</h3>
+	        <p class="lead">Nutzen Sie dieses Formular um das Projektteam zu kontaktieren.</p>
+	      </div>
+		  <div class="row">
+		  	<div class="col-md-6"></div>
+			<div id="erfolgsmeldung"></div>
+			<form id="formKontakt">
+				<div class="form-group" id="formGroupVN">
+					<label for="vorname" class="control-label">Vorname</label>
+					<input type="text" class="form-control" id="vorname" placeholder="Max">
+				</div>
+				<div class="form-group" id="formGroupNN">
+					<label for="nachname" class="control-label">Nachname</label>
+					<input type="text" class="form-control" id="nachname" placeholder="Mustermann">
+				</div>
+				<div class="form-group" id="formGroupEm">
+					<label for="email" class="control-label">E-Mail-Ad­res­se</label>
+					<input type="text" class="form-control" id="email" placeholder="max@mustermann.com">
+				</div>
+				<div class="form-group" id="formGroupNa">
+					<label for="nachricht" class="control-label">Ihre Nachricht an uns:</label>
+					<textarea id="nachricht" class="form-control" rows="5" placeholder="Hier ihre Nachricht schreiben..."></textarea>
+				</div>
+				<div class="form-group text-right">
+					<button type="submit" class="btn btn-danger">Versenden</button>
+				</div>
+			</form>
+		  </div>
+		  
+
+	    </div><!-- /.container -->
+	
+	    <footer id="footermargin" class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<a class="pull-left" href="https://creativecommons.org/licenses/by/3.0/">Copyright &copy; us, released under a Creative Commons CC-BY</a>
+					<div class="pull-right">
+					    <ul class="list-inline">
+					      <li><a href="#">Team</a></li>
+					      <li><a href="#">Kontakt</a></li>
+					    </ul>
+					</div>
+				</div>
+			</div>
+	    </footer>
+
+	 <!-- Bootstrap core JavaScript
+	    ================================================== -->
+	    <!-- Placed at the end of the document so the pages load faster -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+	    <script src="../../dist/js/bootstrap.min.js"></script>
+	    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+		<script>
+		$(#formKontakt).submit(function(){
+			var formControl = true;
+			
+			var formGroupVN = $(#'formGroupVN');
+			var formGroupNN = $(#'formGroupNN');
+			var formGroupEm = $(#'formGroupEm');
+			var formGroupNa = $(#'formGroupNa');
+			
+			formGroupVN.removeClass('has error');
+			formGroupNN.removeClass('has error');
+			formGroupEm.removeClass('has error');
+			formGroupNa.removeClass('has error');
+			
+			var vorname = $('#vorname').val;
+			var nachname = $('#nachname').val;
+			var email = $('#email').val;
+			var nachricht = $('#nachricht').val;
+			
+			if(vorname == '') {
+				formControl = false;
+				formGroupVN.addClass('has error');
+			};
+			
+			if(nachname == '') {
+				formControl = false;
+				formGroupNN.addClass('has error');
+			};
+			
+			if(vorname == '') {
+				formControl = false;
+				formGroupVN.addClass('has error');
+			};
+			
+			if(email == '') {
+				formControl = false;
+				formGroupEm.addClass('has error');
+			};
+			
+			if(nachricht == '') {
+				formControl = false;
+				formGroupNa.addClass('has error');
+			};
+			
+			if(formControl) {
+				$.ajax({
+					type: 'POST',
+					url: 'php/absenden.php',
+					data: { vorname:vorname, nachname:nachname, email:email, nachricht:nachricht }
+				}).done(function(mesg) {
+					var erfolgsmeldung = $('#erfolgsmeldung');
+					erfolgsmeldung.html(message);
+					erfolgsmeldung.addClass('alert');
+					erfolgsmeldung.addClass('alert success')
+				});
+			};
+			
+			return false;
+		});
+		</script>
+	  </body>
+	</html>
