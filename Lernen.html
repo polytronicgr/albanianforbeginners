@@ -14,28 +14,27 @@
 
 	<body>
 		<div id="wrap">
-
-			<nav class="navbar navbar-fixed-top"> <!-- Here comes the navigation Bar!-->
-				<main class="container-fluid"> <!-- Damit die Relationen des Navs stimmen, und bis zum Rand des Bildschirms gehen, aber nicht darüber.-->
+			<nav class="navbar navbar-fixed-top">
+				<main class="container-fluid">
 					<div class="navbar-header">
 						<a class="navbar-brand" href="#">
-							<img class="image-height-fixed" alt="Brand" src="Logo.png">
+							<img class="image-height-fixed" alt="Brand" src="Logo2.png">
 						</a>
-						<a class="navbar-brand" id="text-schwarz" href="#">Albanisch für Anfänger</a>
+						<a class="navbar-brand" id="text-schwarz" href="About.html">Albanisch für Anfänger</a>
 					</div>
 
 					<ul class="nav navbar-nav" id="text-schwarz">
-						<li><a href="#">Lernen</a></li>
-						<li><a href="#">A-Z</a></li>
+						<li><a href="Lernen.html">Lernen</a></li>
+						<li><a href="Search.html">A-Z</a></li>
 						<li><a href="#">Forum</a></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right" id="text-schwarz">
-						<li><a href="#">Hilfe</a></li>
-						<li><a href="#">Projekt</a></li>
+						<li><a href="Hilfe.html">Hilfe</a></li>
+						<li><a href="Team.html">Projekt</a></li>
 					</ul>
 				</main>
 			</nav>
-
+		</div>
 
 
 		<main class="container" id"main">
@@ -89,12 +88,16 @@
 
 	</div>
 
-    <footer id="footermargin" class="container-fluid"> <!-- the class=container is for Bootstrap to tell there are Columns and Rows now -->
+    <footer id="footermargin" class="container-fluid">
 		<div class="row">
 			<div class="col-md-12">
-				<a href="#">Team</a>
-				<a href="#">Projekt</a>
-				<a href="#">Hilfe</a> <!-- & has to be written &amp, otherwise its gonna make some crazy copyright signs and stuff -->
+				<a class="pull-left" href="https://creativecommons.org/licenses/by/3.0/">Copyright &copy; us, released under a Creative Commons CC-BY</a>
+				<div class="pull-right">
+				    <ul class="list-inline">
+				      <li><a href="Team.html">Team</a></li>
+				      <li><a href="Kontakt.html">Kontakt</a></li>
+				    </ul>
+				</div>
 			</div>
 		</div>
     </footer>
