@@ -7,9 +7,6 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
 		<link href="bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="Style.css">
-		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		<script src='./scripts/footer.js'></script>
 
 		<title>Kontakt.html</title>
 
@@ -44,12 +41,12 @@
 
 	      <div class="starter-template">
 	        <h3 style="text-align:center; background-color: #f2d7da">Kontaktformular</h3>
-	        <p class="lead">Nutzen Sie dieses Formular um das Projektteam zu kontaktieren.</p>
+	        <p style="text-align:center; font-size:20px;" class="lead">Nutzen Sie dieses Formular um das Projektteam zu kontaktieren.</p>
 	      </div>
 		  <div class="row">
 		  	<div class="col-md-6"></div>
-			<div id="erfolgsmeldung"></div>
 			<form id="formKontakt">
+				<div class="form-group"></div>
 				<div class="form-group" id="formGroupVN">
 					<label for="vorname" class="control-label">Vorname</label>
 					<input type="text" class="form-control" id="vorname" placeholder="Max">
@@ -81,7 +78,7 @@
 					<a class="pull-left" href="https://creativecommons.org/licenses/by/3.0/">Copyright &copy; us, released under a Creative Commons CC-BY</a>
 					<div class="pull-right">
 					    <ul class="list-inline">
-					      <li><a href="#">Team</a></li>
+					      <li><a href="Team.html">Team</a></li>
 					      <li><a href="Kontakt.html">Kontakt</a></li>
 					    </ul>
 					</div>
@@ -92,8 +89,11 @@
 	 <!-- Bootstrap core JavaScript
 	    ================================================== -->
 	    <!-- Placed at the end of the document so the pages load faster -->
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src='./scripts/footer.js'></script>
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+	    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"></script>')</script>
 	    <script src="../../dist/js/bootstrap.min.js"></script>
 	    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 	    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
@@ -146,7 +146,7 @@
 					type: 'POST',
 					url: 'php/absenden.php',
 					data: { vorname:vorname, nachname:nachname, email:email, nachricht:nachricht }
-				}).done(function(mesg) {
+				}).done(function(msg) {
 					var erfolgsmeldung = $('#erfolgsmeldung');
 					erfolgsmeldung.html(message);
 					erfolgsmeldung.addClass('alert');

@@ -184,7 +184,31 @@ h3 {
 
 }
 
+/*Kontaktformular*/
+
 .starter-template {
   padding: 40px 15px;
   text-align: center;
+}
+
+/* Backgroundimage */
+
+#logo-background {
+	position: fixed;
+	    left: 285px;
+	    top: 50px;
+	    width: 50%;
+	    height: auto;
+	    opacity: 0.1;
+	}
+	
+#logo-background2 {
+	position: fixed;
+	left: 275px;
+	top: 240px;
+	width: 30%;
+	height: auto;
+	opacity: 0.1;
+	}
+	
 }
