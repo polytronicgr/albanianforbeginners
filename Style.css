@@ -148,7 +148,7 @@ h3 {
 
 #custom-search-input{
     padding: 3px;
-    border: solid 1px #E4E4E4;
+    border: solid 1px #CC0000;
     border-radius: 6px;
     background-color: #fff;
 }
@@ -163,7 +163,7 @@ h3 {
     background: none;
     box-shadow: none;
     border: 0;
-    color: #ff2500;
+    color: #CC0000;
     padding: 0 8px 0 10px;
     border-left: solid 1px #ccc;
 }
@@ -180,7 +180,7 @@ h3 {
 
 #btn-toolbar {
 	font-size: 23;
-	color: #ff2500;
+	color: #CC0000;
 
 }
 

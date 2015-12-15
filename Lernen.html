@@ -2,12 +2,15 @@
 
 <html>
 	<head>
-		<meta charset="UTF-8" />
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+		<link href="bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="Style.css">
 		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		<script src="Lernen.js"></script>
+		<script src="./scripts/Lernen.js"></script>
 		<script src='./scripts/footer.js'></script>
 		<title>Lernen.html</title>
 	</head>
@@ -38,44 +41,95 @@
 
 
 		<main class="container" id"main">
+			<article>
+				<h3 style="text-align:center; background-color: #f2d7da">Ushtrime / Übung <strong>1</strong></h3>
+			</article>
 
 					<div class="row">
-
-
-						<div class="col-md-2" "navigation" >
-							<ul class="nav nav-pills nav-stacked nav-left">
-							  <li role="presentation" class="active"><a href="Lernen.html">Übung 1</a></li>
-							  <li role="presentation"><a href="Lernen2.html">Übung 2</a></li>
-							  <li role="presentation"><a href="Lernen3.html">Übung 3</a></li>
-							</ul>
+						<div class="col-md-2">
+						<div class="btn-group">
+						  <button type="button" class="btn btn-danger"><strong>Ushtrimet</strong></button>
+						  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    <span class="caret"></span>
+						    <span class="sr-only">Toggle Dropdown</span>
+						  </button>
+						  <ul class="dropdown-menu">
+						    <li><a href="#">Übung 1</a></li>
+							<li role="separator" class="divider"></li>
+						    <li><a href="#">Übung 2</a></li>
+							<li role="separator" class="divider"></li>
+						    <li><a href="#">Übung 3</a></li>
+						    <li role="separator" class="divider"></li>
+						    <li><a href="#">Übung 4</a></li>
+						    <li role="separator" class="divider"></li>
+						    <li><a href="#">Übung 5</a></li>
+						    <li role="separator" class="divider"></li>
+						    <li><a href="#">Übung 6</a></li>
+						  </ul>
+						</div>
+						</div>
+							<div class="col-md-5">
+							<button id="Albanisch-button"></span>Shqip</button>
+							</div>
+							<div class="col-md-5">
+							<button id="Deutsch-button"></span>Deutsch</button>
+							</div>
 						</div>
 
 						<article>
-							<div class="col-md-4 col-md-offset-1 text-left">
-								<h1>Ushtrime 1</h1>
+							<div class="col-md-5 col-md-offset-2 text-left">
 								<p></p>
-								<h3>Text Shqip</h3>
-								<p id="Albanisch" class="text-weiss">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</P>
+								<h5>Text Shqip</h3>
+							<div id="Albanisch" class="hidden">
+								<p>unë</p>
+								<p>unë dhe ti</p>
+								<p>ne të dy</p>
+								<p>ai</p>
+								<p>ai dhe ajo</p>
+								<p>ata të dy</p>
+								<p>burri</p>
+								<p>gruaja</p>
+								<p>fëmija</p>
+								<p>një familje</p>
+								<p>familja ime</p>
+								<p>Familja ime është këtu.</p>
+								<p>Unë jam këtu.</p>
+								<p>Ti je këtu.</p>
+								<p>Ai është këtu dhe ajo është këtu.</p>
+								<p>Ne jemi këtu.</p>
+								<p>Ju jeni këtu.</p>
+								<p>Ata janë të gjithë këtu.</p>
+							</div>
+							
 							</div>
 						</article>
 
 						<article>
-							<div class="col-md-4 col-md-offset-1 text-left">
-								<h1>Übung 1</h1>
+							<div class="col-md-5 text-left">
 								<p></p>
-								<h3>Deutscher Text</h3>
-								<p id="Deutsch" class="text-weiss">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</P>
+								<h5>Deutscher Text</h3>
+								<div id="Deutsch" class="hidden">
+									<p>ich</p>
+									<p>ich und du</p>
+									<p>wir beide</p>
+									<p>er</p>
+									<p>er und sie</p>
+									<p>sie beide</p>
+									<p>der Mann</p>
+									<p>die Frau</p>
+									<p>das Kind</p>
+									<p>eine Familie</p>
+									<p>meine Familia</p>
+									<p>Meine Familie ist hier.</p>
+									<p>Ich bin hier.</p>
+									<p>Du bist hier.</p>
+									<p>Er ist hier und sie ist hier.</p>
+									<p>Wir sind hier</p>
+									<p>Ihr seid hier.</p>
+									<p>Sie sind alle hier.</p>
+							</div>
 							</div>
 						</article>
-
-						<div class="row slide-nav">
-							<div class="col-md-4 col-md-offset-3 text-center">
-							<button id="Albanisch-button"><span class="glyphicon glyphicon-arrow-up"></span> Text Shqip</button>
-							</div>
-							<div class="col-md-4 col-md-offset-1 text-center">
-							<button id="Deutsch-button"><span class="glyphicon glyphicon-arrow-up"></span> Deutscher Text</button>
-							</div>
-						</div>
 
 					</div>
 
